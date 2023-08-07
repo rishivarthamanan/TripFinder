@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TripFinder</title>
+    <!-- normalized css -->
+    <link rel="stylesheet" href="./style/normalized.css" />
+    <!-- fontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Customized css -->
+    <link rel="stylesheet" href="./style/customized.css" />
+  </head>
+
+  <body>
+    <!--Contents needs to places here!-->
+    <div class="header-container">
+      <header class="header">
+        <div class="left-content">
+          <div class="logo-container">
+            <img src="assets/white-logo.svg" alt="logo" class="logo" />
+            <h3>TripFinder.</h3>
+          </div>
+          <div class="filter-container">
+            <input
+              class="filter"
+              placeholder="Search `Thailand, Asia`"
+              id="filter"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="menu-container">
+            <ul class="list-items">
+              <li class="list">Hotel</li>
+              <li class="list">Listing</li>
+              <li class="list">Agent</li>
+              <li class="list">Pricing</li>
+            </ul>
+          </div>
+          <div class="sign-container">
+            <p>Sign in</p>
+            <button class="signup-btn">Sign up</button>
+          </div>
+        </div>
+      </header>
+      <div class="hero-container">
+        <div class="hero-card">
+          <h3 class="card-head">Latest reviews. Lowest prices.</h3>
+          <p class="card-info">
+            compares prices from 200+ booking sites to help you find the lowest
+            price on the right hotel for you.
+          </p>
+          <div class="features-container">
+            <div class="features">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="hero-filter-container">
+                <input
+                  class="hero-filter"
+                  placeholder="Search `Thailand, Asia"
+                />
+                <i class="fa-solid fa-location-crosshairs"></i>
+              </div>
+              <div class="calender-container">
+                <i class="fa-regular fa-calendar"></i>
+                <input class="start-date" placeholder="Start-date" />
+                <p>-</p>
+                <input class="end-date" placeholder="End-date" />
+              </div>
+              <div class="room-container">
+                <i class="fa-solid fa-user-group"></i>
+                <div class="count-details">
+                  <p>Room</p>
+                  <p>-</p>
+                  <p>Guest</p>
+                </div>
+              </div>
+            </div>
+            <div class="find-btn">
+              <p><a>Find Hotel</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body-container">
+      <section class="section-1">
+        <h2>Explore Destinations</h2>
+        <div class="img-carosel-container">
+          <div class="img-carosel">
+            <img src="assets/london.jpg" />
+            <div class="details">
+              <h3>London</h3>
+              <p>54129 Hotels</p>
+            </div>
+          </div>
+          <div class="img-carosel">
+            <img src="assets/newyork.jpg" />
+            <div class="details">
+              <h3>New York</h3>
+              <p>19236 Hotels</p>
+            </div>
+          </div>
+          <div class="img-carosel">
+            <img src="assets/barcelona.jpg" />
+            <div class="details">
+              <h3>Barcelona</h3>
+              <p>45667 Hotels</p>
+            </div>
+          </div>
+          <div class="img-carosel">
+            <img src="assets/rome.jpg" />
+            <div class="details">
+              <h3>Rome</h3>
+              <p>35695 Hotels</p>
+            </div>
+          </div>
+          <div class="img-carosel">
+            <img src="assets/paris.jpg" />
+            <div class="details">
+              <h3>Paris</h3>
+              <p>23494 Hotels</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-2">
+        <div class="travelers">
+          <h2>Travelers’ Choice: Top hotels</h2>
+          <p>Show All</p>
+        </div>
+        <div class="img-container">
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-12_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>8424 Padberg Flats</p>
+              <p>Small Metal Ball</p>
+              <p>$316.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Bad (12)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-18_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>43299 Murazik Extension</p>
+              <p>Small Soft Ball</p>
+              <p>$245.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Average (11)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>73311 Freida Point</p>
+              <p>Incredible Wooden Ball</p>
+              <p>$662.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Average (8)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-10_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>303 Volkman Lakes  </p>
+              <p>Handcrafted Wooden Towels</p>
+              <p>$170.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Good (5)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-16_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>368 Fadel Isle</p>
+              <p>Generic Metal Shoes</p>
+              <p>$195.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Awesome (8)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>21752 Kraig Pike </p>
+              <p>Small Metal Ball</p>
+              <p>$410.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Bad (11)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-8_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>398 Sydnee Unions</p>
+              <p>Unbranded Concrete Towels </p>
+              <p>$377.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Average (5)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-14_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>95573 Jess Drive</p>
+              <p>Incredible Cotton Hat</p>
+              <p>$30.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Terrible (8)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-20_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>257 O'Hara Glen</p>
+              <p>Licensed Wooden Bike </p>
+              <p>$390.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Average(3)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-6_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>3805 Hane Prairie</p>
+              <p>Incredible Plastic Tuna</p>
+              <p>$312.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Average(1)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-3">
+        <div class="travelers">
+          <h2>Best Rated: Luxary hotels</h2>
+          <p>Show All</p>
+        </div>
+        <div class="img-container">
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-2_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>52623 Donnie Roads</p>
+              <p>Handmade Wooden Mouse</p>
+              <p>$223.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Average (1)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-8_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>28740 Purdy Rue</p>
+              <p>Awesome Cotton Table </p>
+              <p>$768.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Bad (3)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-14_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>453 Beth Passage</p>
+              <p>Incredible Granite Chicken</p>
+              <p>$196.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Good(13)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-20_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>8196 Bins Road</p>
+              <p>Unbranded Frozen Gloves</p>
+              <p>$663.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Good(12)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-6_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>80766 Pearlie Roads</p>
+              <p>Rustic Cotton Chicken</p>
+              <p>$882.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Bad (2)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-12_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>8424 Padberg Flats</p>
+              <p>Small Metal Ball</p>
+              <p>$316.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Bad (12)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-18_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>43299 Murazik Extension</p>
+              <p>Small Soft Ball </p>
+              <p>$245.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Average (11)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-4_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>73311 Freida Point</p>
+              <p>Incredible Wooden Ball</p>
+              <p>$662.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Average (8)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-10_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>303 Volkman Lakes</p>
+              <p>Handcrafted Wooden Towel</p>
+              <p>$316.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>Good (5)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="http://s3.amazonaws.com/redqteam.com/tripfinder-images/hotel-16_thumb.jpg"
+            />
+            <div class="card-details">
+              <p>368 Fadel Isle  </p>
+              <p>Generic Metal Shoes</p>
+              <p>$195.00/Night - Free Cancellation</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Awesome(12)</p>
+              </div>
+            </div>
+            <div class="heart-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="footer-container">
+      <footer class="footer">
+        <div class="title">
+          <a class="active" href="/">
+            <img
+              class="logo"
+              src="https://tripfinder-hotel.vercel.app/images/logo-alt.svg"
+            />
+            <h3 class="trip">TripFinder.</h3>
+          </a>
+        </div>
+        <ul class="footer-container">
+          <li class="footer-list">Hotels</li>
+          <li class="footer-list">Listing</li>
+          <li class="footer-list">Pricing</li>
+          <li class="footer-list">Privacy</li>
+          <li class="footer-list">Agent</li>
+        </ul>
+        <div class="copy">Copyright @ 2023 RedQ, Inc.</div>
+      </footer>
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

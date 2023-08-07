@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+:root {
+  /* colors are changeable always more combinations are in "https://coolors.co/" */
+  --CyanGreen: hsl(182, 100%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --Light-Gray: hsl(0, 0%, 75%);
+  --clr-Transparent-Soft-violet: hsla(0, 0%, 0%, 0.5);
+
+  /* animation and some effects */
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+
+  /* font-fam*/
+  --body-font-family: "Lato", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  font-family: var(--body-font-family);
+  text-decoration: var(--text-dec);
+  background-color: var(--white);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  color: var(--white);
+  margin: auto 1rem;
+}
+
+.visible {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  color: var(--CyanGreen);
+  margin: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  box-shadow: 15px 0px 20px 0px var(--clr-Transparent-Soft-violet);
+  background-color: var(--white);
+  z-index: 3;
+}
+
+.fixed {
+  background-color: rgba(128, 128, 128, 0.223);
+  border: 0.2 solid gray;
+}
+
+.visible .logo {
+  filter: brightness(0);
+}
+
+/* header-left-content */
+.left-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1rem;
+}
+
+.logo {
+  filter: brightness(1);
+}
+
+.filter-container {
+  position: relative;
+}
+
+.filter {
+  width: 400px;
+  height: 45px;
+  padding: 7px;
+  border: 0.5px solid gray;
+  border-radius: 4px;
+}
+
+.filter:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.filter-container i {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: black;
+}
+
+/* header-right-content */
+.right-content {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.menu-container .list-items {
+  display: flex;
+  gap: 3rem;
+}
+
+.menu-container .list-items .list {
+  font-size: 1rem;
+}
+
+.menu-container .list-items li:nth-child(1) {
+  font-weight: 900;
+}
+
+.sign-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.sign-container .signup-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: var(--white);
+  background-color: var(--CyanGreen);
+}
+
+/* hero container */
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.hero-card {
+  margin-top: 35%;
+  padding: 20px;
+  width: 950px;
+  height: 200px;
+  border-radius: var(--radius);
+  background-color: var(--white);
+}
+
+.hero-card .card-head {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+
+.hero-card .card-info {
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+/* features */
+
+.features-container {
+  background-color: rgba(128, 128, 128, 0.223);
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--radius);
+}
+
+.features {
+  color: gray;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.fa-location-dot {
+  color: var(--CyanGreen);
+}
+
+.hero-filter-container {
+  position: relative;
+}
+
+/* filter */
+
+.hero-filter-container .hero-filter {
+  width: 200px;
+  height: 40px;
+  padding: 7px;
+  border: none;
+  background: transparent;
+  font-size: 0.8rem;
+}
+
+.hero-filter-container .hero-filter:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.header-container .fa-location-crosshairs {
+  padding-right: 5px;
+  border-right: 0.2px solid rgba(128, 128, 128, 0.349);
+  color: var(--black);
+}
+
+/* calender */
+
+.calender-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fa-calendar {
+  color: var(--CyanGreen);
+}
+
+.calender-container input {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 0.8rem;
+}
+
+.calender-container input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* rooms booking */
+
+.room-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+}
+
+.fa-user-group {
+  padding-left: 5px;
+  border-left: 0.2px solid rgba(128, 128, 128, 0.349);
+  color: var(--CyanGreen);
+}
+
+.count-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.find-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  border-radius: 0 3px 3px 0;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--CyanGreen);
+}
+
+/* body-container */
+.body-container {
+  height: 100%;
+  padding: 5rem 2rem 2rem 2rem;
+}
+
+.section-1 {
+  margin-bottom: 3rem;
+}
+
+.img-carosel-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.img-carosel {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.img-carosel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 10px;
+}
+
+.img-carosel .details {
+  position: absolute;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  z-index: 2;
+}
+
+.section-2 {
+  margin-bottom: 3rem;
+}
+
+.travelers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.travelers p {
+  font-size: 0.8rem;
+}
+
+.img-container {
+  margin-top: 2rem;
+  margin-left: 1%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.card {
+  width: 18%;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border: 0.5px solid rgba(128, 128, 128, 0.349);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0px 1px 8px 0px var(--clr-Transparent-Soft-violet);
+  transition: all 0.3s ease-in;
+}
+
+.card img:nth-child(1) {
+  height: 170px;
+}
+
+.card .card-details {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.card-details p:nth-child(1) {
+  color: gray;
+  font-size: 0.7rem;
+}
+
+.card-details p:nth-child(2) {
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.card-details p:nth-child(3) {
+  color: black;
+  font-size: 0.8rem;
+}
+
+.rating {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0.5rem;
+  padding-bottom: 10px;
+}
+
+.rating i {
+  color: var(--CyanGreen);
+}
+
+.rating p {
+  margin-left: 5px;
+}
+
+.heart-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.heart-container i {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  color: white;
+}
+
+/* footer */
+
+.footer .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .active {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.footer .logo {
+  width: 1.5rem;
+}
+
+.footer .trip {
+  color: rgb(0, 132, 137);
+}
+
+footer {
+  height: 15rem;
+  background-image: url("https://tripfinder-hotel.vercel.app/static/media/footer-bg.71b59c6ca51ec804e5764202fa155ef8.svg");
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+}
+
+.footer .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.footer .copy {
+  margin-left: 37rem;
+  margin-top: 2rem;
+  font-weight: 400;
+  color: gray;
+}
